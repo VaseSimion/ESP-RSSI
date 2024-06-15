@@ -1,6 +1,8 @@
 # ESP RSSI Measurement
 
 This repository contains two Arduino sketches for measuring the Received Signal Strength Indicator (RSSI) of packets received by an ESP8266 or ESP32 device. The sketches are designed to be uploaded to an ESP8266 or ESP32 device and will display the RSSI of received packets on the device's screen.
+I searched the internet a while to be able to measure the RSSI for ESP-now between 2 ESP8266 devices and got bits and pieces from here and there. In this repo you have it all in one place.
+I used a small oled screen to show the RSSI to be able to test outside, but you can ignore that and just look on the serial monitor if you do not have one.
 
 ## Files
 
