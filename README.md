@@ -21,6 +21,8 @@ This repository contains two Arduino sketches for measuring the Received Signal 
 3. Power on the ESP device with the uploaded sketch. It will start capturing packets and displaying their RSSI on the screen.
 
 ## Note
+For measuring RSSI you do not need to send messages from another ESP to the one that measures RSSI. In promiscuous mode the RSSI with the code in this repo will pick from the air all wifi messages (even if they are not directed to it) and it will filter them to look only at the ones sent by an ESP device and will show the signal strength of those. 
+Each device has an OUI number in the wifi message and ESP-now is like wifi which is an identifier of the manufacturer.
 
 This project uses ESP-NOW, a protocol developed by Espressif. ESP-NOW enables devices to communicate without the need for Wi-Fi connectivity. This means that the devices do not need to be connected to the same network or any network at all to communicate.
 
